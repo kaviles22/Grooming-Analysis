@@ -5,20 +5,26 @@ on:
   pull_request:
     branches: [ "main" ]
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
 jobs:
   load:
     runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        python-version: ["pypy3.10"]
+
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
-      # Runs a single command using the runners shell
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          
       - name: load-vectorstore to qdrant
-      - env:
+        env:
           QDRANT_URL: ${{secrets.QDRANT_URL}}
           QDRANT_API_KEY:  ${{secrets.QDRANT_API_KEY}}
-        run: 
+        run: |
           pip install -r requirements.txt
           python autoload_qdrant.py
