@@ -25,6 +25,7 @@ jobs:
         env:
           QDRANT_URL: ${{secrets.QDRANT_URL}}
           QDRANT_API_KEY:  ${{secrets.QDRANT_API_KEY}}
+          OPENAI_API_KEY: ${{secrets.OPENAI_API_KEY}}
         run: |
           pip install -r requirements.txt
           python autoload_qdrant.py
