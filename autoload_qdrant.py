@@ -10,10 +10,10 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 load_dotenv()
 
 # Load the "training" data, which will be the Document Store
-CORPUS_DATA_PATH="../pan12-sexual-predator/training/conversations.xml"
-PREDATORS_DATA_PATH="../pan12-sexual-predator/training/predator-ids.txt"
-CORPUS_TEST_DATA_PATH="../pan12-sexual-predator/test/conversations.xml"
-PREDATORS_TEST_DATA_PATH="../pan12-sexual-predator/test/predator-ids.txt"
+CORPUS_DATA_PATH="pan12-sexual-predator/training/conversations.xml"
+PREDATORS_DATA_PATH="pan12-sexual-predator/training/predator-ids.txt"
+CORPUS_TEST_DATA_PATH="pan12-sexual-predator/test/conversations.xml"
+PREDATORS_TEST_DATA_PATH="pan12-sexual-predator/test/predator-ids.txt"
 
 os.makedirs("csv_files", exist_ok=True)
 # Load the training data, in this case only load the abusive cases to store them in Qdrant.
