@@ -15,6 +15,7 @@ PREDATORS_DATA_PATH="pan12-sexual-predator/training/predator-ids.txt"
 CORPUS_TEST_DATA_PATH="pan12-sexual-predator/test/conversations.xml"
 PREDATORS_TEST_DATA_PATH="pan12-sexual-predator/test/predator-ids.txt"
 
+# Create folder if necessary
 os.makedirs("csv_files", exist_ok=True)
 # Load the training data, in this case only load the abusive cases to store them in Qdrant.
 xml2csv(nameXML=CORPUS_DATA_PATH,nameCSV="csv_files/abusive_text.csv",predatorsTXT=PREDATORS_DATA_PATH, only_abusive=True)
