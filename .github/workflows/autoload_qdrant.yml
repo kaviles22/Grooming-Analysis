@@ -12,13 +12,11 @@ jobs:
   load:
     runs-on: ubuntu-latest
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
-      # Runs a single command using the runners shell
       - name: load-vectorstore to qdrant
-      - env:
+        env:
           QDRANT_URL: ${{secrets.QDRANT_URL}}
           QDRANT_API_KEY:  ${{secrets.QDRANT_API_KEY}}
-      - run: 
+        run: 
           pip install -r requirements.txt
           python autoload_qdrant.py
