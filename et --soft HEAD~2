@@ -1,0 +1,36 @@
+[33mcommit a6a7cacb26c6ab60cbec713d36f1293005fd4fea[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: kpaviles <kpam2435@gmail.com>
+Date:   Thu Jan 2 23:36:27 2025 -0500
+
+    Modified xml docs
+
+[33mcommit 818493195494d89456270f39310e12e3ccb9b774[m
+Merge: 57444be e6a69b1
+Author: kpaviles <kpam2435@gmail.com>
+Date:   Thu Jan 2 23:21:46 2025 -0500
+
+    Merge branch 'main' of github.com:kaviles22/Grooming-Analysis
+
+[33mcommit 57444beaf3c49614b1057ca657860ea601896dbe[m
+Author: kpaviles <kpam2435@gmail.com>
+Date:   Thu Jan 2 23:21:29 2025 -0500
+
+    First commit
+
+[33mcommit e6a69b1b21ee84ba8168786fa80edc70aacafcf2[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Karla Pavlova Aviles <59234567+kaviles22@users.noreply.github.com>
+Date:   Thu Jan 2 23:20:37 2025 -0500
+
+    Rename .github/autoload_qdrant.yml to .github/workflows/autoload_qdrant.yml
+
+[33mcommit a0923149f86675cb97ad83eba03b74923976da75[m
+Author: Karla Pavlova Aviles <59234567+kaviles22@users.noreply.github.com>
+Date:   Thu Jan 2 23:19:05 2025 -0500
+
+    Create autoload_qdrant.yml
+
+[33mcommit a3cc3b92171c865c1c3bc0bc6b605a39ee4f6dd3[m
+Author: Karla Pavlova Aviles <59234567+kaviles22@users.noreply.github.com>
+Date:   Thu Jan 2 12:30:30 2025 -0500
+
+    Initial commit
