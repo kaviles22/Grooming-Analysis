@@ -25,4 +25,4 @@ jobs:
         env:
           QDRANT_URL: ${{secrets.QDRANT_URL}}
           QDRANT_API_KEY:  ${{secrets.QDRANT_API_KEY}}
-        run: python -c "import sys; print(sys.version)"
+        run: pip install -r requirements.txt
